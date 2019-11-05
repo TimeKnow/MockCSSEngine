@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CalaTour</title>
+    <link rel="stylesheet" href="contacts.css" type="text/css">
+    <link rel="stylesheet" href="messenger.css" type="text/css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+ </head>
+<body>
+<script src="contacts.js" type="text/javascript">
+    window.onmousemove = () => {
+        validateForm();
+    }
+</script>
+<script src="messenger.js" type="text/javascript"></script>
+
+<div id="messenger" class="messenger centered closed" onclick="messengerOnClick()">
+    <i class="fa fa-comments fa-2x"></i>
+</div>
+<div id="messengerBody" class="messengerBody closed">
+    <div>
+        <div class="messenger-form">
+            <span class="messenger-form-input"><i class="fa fa-lock fa-2x"></i>Auth is required</span>
+            <label class="messenger-form-label"for="emailMessenger">Email</label>
+            <input class="messenger-form-input" id="emailMessenger" type="text" name="emailMess">
+            <label class="messenger-form-label" for="passwordMessenger">Password</label>
+            <input class="messenger-form-input" id="passwordMessenger" type="password" name="passwordMess">
+            <button class="messenger-form-input" type="button">Login</button>
+        </div>
+    </div>
+</div>
+<nav>
+    <h1>
+        <strong>CalaTour</strong><em> - your travel agency</em>
+    </h1>
+    <ul>
+        <li><a>Home</a></li>
+        <li><a>Cruises</a></li>
+        <li><a>Hiking</a></li>
+        <li><a>Swiming</a></li>
+        <li><a>Special offers</a></li>
+        <li><a href="pages/contacts.html">Contacts</a></li>
+    </ul>
+</nav>
+<div>
+    <img src="../images/caribbean.jpg">
+    <div>
+        <h2> Contact </h2>
+        <div class="form-container">
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut doloribus eaque inventore
+                labore,
+                reiciendis rerum? Architecto atque cum doloribus esse, harum inventore laudantium quo sequi similique
+                tenetur ullam voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut
+                doloribus
+                eaque inventore labore, reiciendis rerum? Architecto atque cum doloribus esse, harum inventore
+                laudantium quo
+                sequi similique
+                tenetur ullam voluptates? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi debitis
+                distinctio
+                id maiores mollitia nam provident quasi quod saepe suscipit. Culpa distinctio dolorum, illum ipsa magni
+                omnis
+                praesentium rem temporibus! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, ad
+                adipisci
+                aliquid autem blanditiis consectetur culpa et excepturi exercitationem harum incidunt laudantium neque
+                quia
+                quibusdam saepe, sed similique sit voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Ad enim
+                quidem suscipit ullam voluptatum. Accusantium ad, atque deleniti dicta excepturi id inventore ipsum modi
+                nisi
+                officia reiciendis, ullam ut. Assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                aliquid
+                enim eos esse laborum libero magni maiores nobis nostrum nulla obcaecati possimus provident quidem quis
+                rem,
+                reprehenderit repudiandae tempora temporibus?
+            </p>
+            <form onsubmit="return validateForm()">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" type="text" name="first_name" value="Teodor">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text" name="last_name" value="Stefanut">
+                    <label for="address">Address</label>
+                    <input id="address" type="text" name="address" value="71-73 Ceva Strada">
+                    <label for="birthDate">Birthdate</label>
+                    <input id="birthDate" type="text" name="birthDate" placeholder="dd/mm//yyyy">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="text" name="phone" value="">
+                    <label for="emailAddress">Email Address</label>
+                    <input id="emailAddress" type="text" name="emailAddress" value="">
+                    <div>
+                        <label for="color">Color</label>
+                        <input id="color" name="color" type="color">
+                    </div>
+                    <p id="form-errors"></p>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div>
+        <h2>Last minute</h2>
+        <div>
+            <ul>
+                <li>
+                    <div>
+                        <h3>
+                            Crete - 5 days
+                        </h3>
+                        <div>
+                            <img src="../images/crete.jpg">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut doloribus eaque
+                            inventore labore, reiciendis rerum?
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>
+                            Barcelona
+                        </h3>
+                        <div>
+                            <img src="../images/barcelona.jpg">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut doloribus eaque
+                            inventore labore, reiciendis rerum?
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>
+                            Montenegro
+                        </h3>
+                        <div>
+                            <img src="../images/montenegro.jpg">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aut doloribus eaque
+                            inventore labore, reiciendis rerum?
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <strong>@ 2014</strong> Computer Graphics and Interactive Systems
+</footer>
+</body>
+</html>

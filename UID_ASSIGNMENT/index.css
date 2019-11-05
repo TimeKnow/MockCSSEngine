@@ -1,0 +1,82 @@
+nav {
+    font-size: large;
+    color: #7d0017;
+}
+
+nav h1 {
+    margin-bottom: 0;
+}
+
+nav h1 strong {
+    color: #5e0016;
+}
+
+nav ul {
+    border-radius: 10px 10px 0px 0px;
+    background-color: rgb(250, 192, 84);
+    float: right;
+    padding-top: 10px;
+    height: 30px;
+    text-align: right;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+    color: #7d0017;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+body {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+body img {
+    width: 100%;
+}
+
+body div ul li {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+body div ul li div {
+    width: 420px;
+    background-color: aquamarine;
+}
+
+body div ul li div h3 {
+    padding-left: 10px;
+    text-align: left;
+    color: blue;
+}
+
+body div ul li div div {
+    text-align: center;
+    background-color: aqua;
+}
+
+body div ul li div img {
+    width: inherit;
+    height: inherit;
+}
+
+footer {
+    padding: 10px 10px 10px 10px;
+    color: blue;
+    background-color: aquamarine;
+}
+
+footer strong {
+    color: black;
+}

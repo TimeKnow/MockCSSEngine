@@ -1,0 +1,55 @@
+.messenger {
+    position: fixed;
+    overflow: hidden;
+    top: 100px;
+    left: 0px;
+    background-color: rgb(250, 192, 84);
+}
+
+.messenger:hover {
+    background-color: rgb(210, 122, 84);
+}
+
+.closed {
+    width: 55px;
+    height: 35px;
+}
+
+.opened {
+    width: 300px;
+}
+
+.centered {
+    justify-content: center;
+    text-align: center;
+}
+
+.messengerBody {
+    position: fixed;
+    overflow: hidden;
+    width: 300px;
+    height: 300px;
+    top: 150px;
+    left: 0px;
+    background-color: teal;
+}
+
+.messengerBody.closed {
+    display: none;
+}
+
+.messenger-form {
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.messenger-form-label {
+    width: 100%;
+    padding-top: 10px;
+}
+
+.messenger-form-input {
+    padding-top: 5px;
+    width: 100%;
+}
