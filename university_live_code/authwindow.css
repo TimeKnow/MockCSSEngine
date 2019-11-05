@@ -1,0 +1,64 @@
+form
+{
+	background-color:#619E9F;
+	padding:2%;
+}
+
+form input
+{
+	display: block;
+}
+
+
+#authWindow{
+	width: 40px;
+	height: 40px;
+	position:fixed;
+	top:100px;
+	left:0px;
+	overflow: hidden;
+}
+
+
+
+#authWindowHeader{
+	padding:10px;
+	background-color:#DEB887;
+	display:flex;
+	justify-content: space-between;
+
+}
+
+#authWindowHeader i{
+
+	padding:5px;
+	color:#97202E;
+
+}
+
+#loadingImg{
+	width:25px;
+	height:25px;
+}
+
+#processingAuth{
+	position:fixed;
+	top:340px;
+	left:0px;
+	width:300px;
+	height:30px;
+}
+
+.whiteText{
+	color: white;
+}
+
+.alertText{
+	color: #97202E;
+}
+
+#chatBox {
+    height: 300px;
+    border-style: solid;
+    overflow-y: scroll
+}
