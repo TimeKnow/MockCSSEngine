@@ -2,7 +2,7 @@
 <HTML>
 
 <HEAD>
-    <TITLE>  CalaTour - your travel agency</TITLE>
+    <TITLE> CalaTour - your travel agency</TITLE>
 
 
     <LINK rel="stylesheet" href="authwindow.css" type="text/css">
@@ -18,58 +18,58 @@
 
 <BODY>
 <!--Authentication pop-up-->
-    <div id="authWindow">
-        <div id="authWindowHeader">
-            <div>
-                <i id="open" class="fa fa-weixin"> </i>
-                <span id="authText">Chat with us !</span>
-            </div>
-            <i id="closeChat" class="fa fa-2x fa-times"> </i>
+<div id="authWindow">
+    <div id="authWindowHeader">
+        <div>
+            <i id="open" class="fa fa-weixin"> </i>
+            <span id="authText">Chat with us !</span>
+        </div>
+        <i id="closeChat" class="fa fa-2x fa-times"> </i>
+    </div>
+
+    <!-- Authenticate form -->
+    <div id="chatFormDiv">
+
+        <form>
+            <p id="authHeader"> Authentication is required </p>
+
+            <input type="text" placeholder="username" id="username" name="username"/>
+            <input type="password" placeholder="password" id="password" name="password"/>
+
+            <button type="submit" id="authButton">Authenticate</button>
+
+            <br/>
+            <br/>
+            <br/>
+
+        </form>
+    </div>
+
+    <div id="processingAuth">
+        <img id="loadingImg" src="images/loading.gif" alt="Loading..."/> <span>Processing ...</span>
+    </div>
+
+    <!-- Chat window -->
+    <div id="chatWindow">
+        <div id="welcomeUserBar" class="welcomeUserBar">
+            <i class="fa fa-user userIcon"></i>
+            Welcome <span id="userDisplayName"> ChatUser_1 </span>
+
+            <i id="logout" class="fa fa-sign-out logOutIcon" aria-hidden="true" style="float:right;"></i>
         </div>
 
-        <!-- Authenticate form -->
-        <div id="chatFormDiv">
+        <div id="chatBox" class="chatBox">
 
-            <form>
-                <p id="authHeader"> Authentication is required </p>
-
-                <input type="text" placeholder="username" id="username" name="username" />
-                <input type="password" placeholder="password" id="password" name="password" />
-
-                <button type="submit" id="authButton">Authenticate </button>
-
-                <br/>
-                <br/>
-                <br/>
-
-            </form>
         </div>
 
-        <div id="processingAuth">
-            <img id="loadingImg" src="images/loading.gif" alt="Loading..."/> <span>Processing ...</span>
-        </div>
-
-        <!-- Chat window -->
-        <div id="chatWindow" >
-            <div id="welcomeUserBar" class="welcomeUserBar">
-                <i class="fa fa-user userIcon"></i>
-                Welcome  <span id="userDisplayName"> ChatUser_1 </span>
-
-                <i id="logout" class="fa fa-sign-out logOutIcon" aria-hidden="true" style="float:right;"></i>
-            </div>
-
-            <div id="chatBox" class="chatBox">
-
-            </div>
-
-            <div id="sendMessageBar">
-                <input id="typeMessage" type="text" placeholder="type message">
-                <button id="send">Send</button>
-            </div>
-
+        <div id="sendMessageBar">
+            <input id="typeMessage" type="text" placeholder="type message">
+            <button id="send">Send</button>
         </div>
 
     </div>
+
+</div>
 
 </BODY>
 
